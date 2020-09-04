@@ -1,0 +1,402 @@
+body,
+html {
+  overflow-x: hidden;
+}
+main .container h3 {
+  padding-bottom: 60px;
+}
+main .container p {
+  font-size: 24px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 170px;
+}
+main .container p span {
+  display: block;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+main div.container {
+  width: 100%;
+  margin: auto;
+  min-height: auto;
+  padding-bottom: 360px;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: visible;
+}
+main div.container article {
+  width: 1194px;
+  margin: 0 auto;
+  position: relative;
+}
+main div.container article .owl-item {
+  width: 400px !important;
+  height: 680px;
+}
+.owl-carousel .owl-item .portrait img {
+  opacity: 0.2 !important;
+  transition: 0.4s;
+  position: relative;
+  display: block;
+  width: initial;
+  height: initial;
+}
+.owl-carousel .owl-item .portrait {
+  width: 400px;
+  height: 400px;
+  background-color: #040309;
+  display: block;
+  z-index: 5;
+}
+.owl-carousel .owl-item .portrait img{
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .owl-item .portrait:hover img {
+    opacity: 0.4 !important;
+  }
+}
+.owl-carousel .owl-item.active ~ .owl-item.active .portrait img:hover {
+  opacity: 0.5 !important;
+}
+.owl-carousel .owl-item.active ~ .owl-item.active .portrait img {
+  opacity: 0.3 !important;
+}
+.owl-carousel .owl-item.active .portrait img {
+  opacity: 1 !important;
+}
+
+/* main div.container article .owl-item img::after{
+    width: initial;
+    height: initial;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #000;
+} */
+
+.container article .owl-carousel .owl-stage {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0.25s ease 0s;
+  position: absolute;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #4873fc;
+  width: initial;
+}
+.owl-theme .owl-dots .owl-dot span {
+  height: 4px;
+  width: initial;
+  background-color: #cacaca;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: 0.2s ease;
+  border-radius: 0px;
+  margin: 0;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  /* -webkit-tap-highlight-color: transparent; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 400px;
+  z-index: 50;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: block;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0;
+  padding: 0px !important;
+  outline: 0 !important;
+}
+@media only screen and (min-width: 1024px) {
+  .owl-dots {
+    position: absolute;
+    z-index: 99;
+    top: 335px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .owl-theme .owl-dots .owl-dot span {
+    height: 6px;
+  }
+}
+
+/* //owl 플러그인 */
+
+/* namecard */
+
+@media only screen and (min-width: 1024px) {
+  .owl-carousel .owl-item .profile {
+    width: 1194px;
+    margin-top: 86px;
+    overflow: unset;
+  }
+}
+main div.container article.namecard {
+  width: 150px;
+  margin-right: 140px;
+  text-align: left;
+  float: left;
+  text-align: center;
+}
+.namecard .name {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.namecard .title {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+main div.container article.bio {
+  width: calc(100% - 150px);
+}
+.bio ul {
+}
+.bio ul li {
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.8px;
+}
+
+/* item */
+.owl-carousel .owl-item.active ~ .owl-item.active section,
+.owl-carousel .owl-item section {
+  opacity: 0;
+  pointer-events: none;
+}
+.owl-carousel .owl-item.active section {
+  opacity: 1;
+  pointer-events: auto;
+}
+.active {
+  color: #000;
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  main .container_header {
+    width: 100%;
+    padding-top: 50px;
+    background-color: #040309;
+    background-image: none;
+  }
+  main .container_header h2 {
+    position: relative;
+    margin-top: 78px;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0.97;
+  }
+  main .container_header h2::before {
+    content: "Introduction";
+    position: absolute;
+    display: block;
+    top: -40px;
+    opacity: 0.97;
+    left: 50%;
+    transform: translateX(-42px);
+    font-size: 14px;
+    color: #488dfc;
+    font-weight: bold;
+  }
+  main .container {
+    width: 100%;
+    padding: 80px 20px 0 20px;
+  }
+  main .container h3 {
+    padding-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: -1.6px;
+  }
+  main .container section article {
+    width: 100%;
+  }
+
+  main .container p {
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 170px;
+  }
+  main .container p span {
+    display: block;
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: -0.65;
+    line-height: 1.62;
+  }
+  main div.container article .owl-item {
+    width: 150px !important;
+    height: 550px;
+  }
+  .owl-carousel .owl-item .portrait {
+    width: 150px;
+    height: 150px;
+    background-color: #040309;
+    display: block;
+    z-index: 5;
+  }
+  .owl-carousel .owl-item .portrait img {
+    width: 150px;
+    height: 150px;
+  }
+  main div.container article.namecard {
+    width: 100%;
+    margin-right: 0px;
+    text-align: left;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  .namecard .name {
+    font-size: 22px;
+    letter-spacing: -1.1px;
+    display: inline;
+  }
+  .namecard .title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 0 0 15px;
+    display: inline-block;
+  }
+  div.item {
+    position: relative;
+  }
+  .owl-carousel .owl-item.active section {
+    opacity: 1;
+    pointer-events: auto;
+    width: 89vw;
+  }
+  main div.container article.bio {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .bio ul li {
+    font-size: 13px;
+    line-height: 1.62;
+    letter-spacing: -0.65px;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 20px;
+  }
+  .owl-theme .owl-dots,
+  .owl-theme .owl-nav {
+    text-align: center;
+    /* -webkit-tap-highlight-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    z-index: 50;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    height: 2px;
+    width: 40px;
+    background-color: #cacaca;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: 0.2s ease;
+    border-radius: 0px;
+    margin: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  main div.container article .owl-item {
+    width: 150px !important;
+    height: 550px;
+  }
+  .owl-carousel .owl-item .portrait {
+    width: 150px;
+    height: 150px;
+    background-color: #040309;
+    display: block;
+    z-index: 5;
+  }
+  .owl-carousel .owl-item .portrait img {
+    width: 150px;
+    height: 150px;
+  }
+  main div.container article.namecard {
+    width: 100%;
+    margin-right: 0px;
+    text-align: left;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  .namecard .name {
+    font-size: 22px;
+    letter-spacing: -1.1px;
+    display: inline;
+  }
+  .namecard .title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 0 0 15px;
+    display: inline-block;
+  }
+  div.item {
+    position: relative;
+  }
+  .owl-carousel .owl-item.active section {
+    opacity: 1;
+    pointer-events: auto;
+    width: 89vw;
+  }
+  main div.container article.bio {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .bio ul li {
+    font-size: 13px;
+    line-height: 1.62;
+    letter-spacing: -0.65px;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 20px;
+  }
+  .owl-theme .owl-dots,
+  .owl-theme .owl-nav {
+    text-align: center;
+    /* -webkit-tap-highlight-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    z-index: 50;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    height: 2px;
+    width: 40px;
+    background-color: #cacaca;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: 0.2s ease;
+    border-radius: 0px;
+    margin: 0;
+  }
+}

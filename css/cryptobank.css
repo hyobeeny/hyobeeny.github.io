@@ -1,0 +1,1062 @@
+/* 한글폰트 NotoSansCJKKr   한글은 노토산스 폰트를 사용해서 작업. 자간은 보통 -50을 사용합니다. */
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/NotoSansCJKkr-Thin.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/NotoSansCJKkr-Regular.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/NotoSansCJKkr-Medium.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/NotoSansCJKkr-Light.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/NotoSansCJKkr-DemiLight.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/NotoSansCJKkr-Bold.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/NotoSansCJKkr-Black.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+header {
+  background-color: transparent;
+}
+.main_header {
+  opacity: 1;
+  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/*크립토뱅크 메인 비주얼 + mp4*/
+main {
+  color: #fff;
+  text-align: center;
+}
+main .main_visual {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+  background: #060922 url("../image/cryptobank/main_bg.png") no-repeat center;
+}
+main .main_visual h2 {
+  width: 100%;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  top: 400px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out 0.3s, top 1s ease-in-out;
+}
+main .main_visual h2.on {
+  opacity: 1;
+  top: 260px;
+}
+
+main .main_visual em {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 409px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.67;
+  letter-spacing: -1.2px;
+  color: #f8f8f8;
+  opacity: 0;
+  transition: opacity 1s ease-in 0.5s, top 1s ease-in;
+}
+main .main_visual em.letter1 {
+  top: 507px;
+}
+main .main_visual em.letter2 {
+  top: 600px;
+}
+main .main_visual em.on {
+  opacity: 1;
+}
+main .main_visual em.letter1.on {
+  top: 407px;
+}
+main .main_visual em.letter2.on {
+  top: 440px;
+}
+main .main_visual > div {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in 1s;
+}
+main .main_visual > div.on {
+  opacity: 1;
+}
+main .main_visual > div video {
+  width: 390px;
+  border-radius: 20px;
+}
+main .main_visual > div img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -230px;
+}
+
+/*컨텐츠시작*/
+main .container {
+  width: 100%;
+  padding-top: 1120px;
+}
+main .container section {
+  position: relative;
+}
+main .container section .contents_bg {
+  width: 100%;
+  height: 520px;
+}
+main .container section > div h2 {
+  padding-top: 120px;
+  padding-bottom: 88px;
+  font-size: 62px;
+  font-weight: 700;
+  letter-spacing: -3.1px;
+}
+main .container section > div span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -1.2px;
+}
+
+/*content1*/
+main .container .con1 {
+  width: 100%;
+  background: #060922 url(../image/cryptobank/con_bg1.png) no-repeat right
+    bottom;
+  background-size: auto 100%;
+}
+main .container section .star_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  /* background-attachment: fixed; */
+}
+
+main .container section .star_bg li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  animation: star 1s ease-in-out infinite alternate;
+  z-index: 7;
+}
+main .container section .star_bg li:first-child {
+  background: transparent url(../image/cryptobank/star_1.png) no-repeat center;
+
+  animation-delay: 1s;
+}
+main .container section .star_bg li:nth-child(2) {
+  background: transparent url(../image/cryptobank/star_2.png) no-repeat center;
+}
+main .container section .star_bg li:nth-child(3) {
+  background: transparent url(../image/cryptobank/star_2.png) no-repeat bottom;
+  background-attachment: fixed;
+}
+
+main .container .con1 article > div {
+  height: 1100px;
+  position: relative;
+}
+main .container .con1 article > div > div {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  padding-left: 140px;
+  padding-bottom: 400px;
+  z-index: 9;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s linear 0.6s, transform 0.6s ease-in 0.3s;
+}
+main .container .con1 article > div > div.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+main .container .con1 article > div > div.bg_color {
+  padding-left: 95px;
+  height: 800px;
+  background-color: #060922;
+  z-index: 9;
+}
+main .container .con1 article > div > div > h3 {
+  padding-top: 70px;
+  padding-bottom: 75px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+  text-align: left;
+  color: #488dfc;
+  opacity: 1;
+}
+main .container .con1 article > div > div > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  text-align: left;
+  opacity: 1;
+  color: #fff;
+}
+main .container .con1 article > div .tab li > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  text-align: left;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  padding-top: 55px;
+  left: 94px;
+}
+main .container .con1 article > div .tab li.on > p {
+  opacity: 1;
+}
+/*con1 이미지 사이즈 통일*/
+main .container .con1 article > div img {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  opacity: 0;
+  margin-left: -400px;
+  width: 400px;
+  transition: opacity 1s linear;
+}
+main .container .con1 article > div img.on {
+  top: 0;
+  opacity: 1;
+}
+main .container .con1 article > div .gif {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  opacity: 0;
+  margin-left: -400px;
+  width: 400px;
+  height: 800px;
+  transition: opacity 1s linear;
+  background-size: 100%;
+  animation: bga 5s 1s infinite linear;
+}
+
+main .container .con1 article > div .gif.on {
+  top: 0;
+  opacity: 1;
+}
+
+main .container .con1 article > div img.phone {
+  z-index: 9;
+}
+
+main .container .con2 {
+  width: 100%;
+  background: #060922 url(../image/cryptobank/con_bg1.png) no-repeat top;
+  background-size: 100% auto;
+}
+
+/*별 반짝임효과*/
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*편의성 자산관리 탭메뉴*/
+main .container .con1 article > div .tab {
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: left;
+}
+main .container .con1 article > div .tab li {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+  margin-right: 40px;
+  color: #999;
+  cursor: pointer;
+}
+main .container .con1 article > div .tab li:hover,
+main .container .con1 article > div .tab li.on {
+  color: #488dfc;
+}
+main .container .con1 article > div .tab_wrap .tab_content {
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  width: 400px;
+  height: 800px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+main .container .con1 article > div .tab_wrap #tab1.on {
+  /* background: #060922 url(../image/cryptobank/con1_a2.png) no-repeat center; */
+  background-size: 100%;
+  animation: bga 4s 0.3s infinite linear, slide1 0.3s 1 linear;
+}
+
+main .container .con1 article > div .tab_wrap #tab2.on {
+  /* background: #060922 url(../image/cryptobank/con1_b2.png) no-repeat center; */
+  background-size: 100%;
+  animation: bgb 4s 0.25s infinite linear, slide2 0.25s 1 linear;
+}
+main .container .con1 article > div .tab_wrap #tab3.on {
+  /* background: #060922 url(../image/cryptobank/con1_c3.png) no-repeat center; */
+  background-size: 100%;
+  animation: bgc 6.5s 0.25s infinite linear, slide3 0.25s 1 linear;
+}
+
+main .container .con1 article > div .con1_img {
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  margin-left: -400px;
+  width: 400px;
+  height: 800px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*간편송금*/
+main .container .con1 article > div .con1_d {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -400px;
+  width: 400px;
+  height: 800px;
+  background: #060922 url(../image/cryptobank/con1_d1.png) no-repeat center;
+  background-size: 100%;
+  animation-name: bgd;
+  animation-duration: 7s;
+  animation-delay: 2.5s;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/*언택트 QR 결제*/
+main .container .con1 article > div .con1_e {
+  background: #060922 url(../image/cryptobank/con1_e1.png) no-repeat center;
+  background-size: 100%;
+  animation-name: bge;
+  animation-duration: 7.5s;
+  animation-delay: 2.5s;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+main .container .con1 article > div .con1_d.on,
+main .container .con1 article > div .con1_e.on {
+  opacity: 1;
+}
+
+main .container .con1 article > div .con1_e:after {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 4px;
+  opacity: 0;
+  background-color: #e5e731;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 204px;
+  animation-name: gold;
+  animation-duration: 7.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/*content2*/
+main .container .con2 {
+  width: 100%;
+  background: #060922 url(../image/cryptobank/con_bg2.png) no-repeat bottom;
+  background-size: 100% auto;
+}
+main .container .con2 article > div > div {
+  text-align: center;
+}
+main .container .con2 article > div > div > h3 {
+  padding-top: 200px;
+  padding-bottom: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+  color: #488dfc;
+}
+main .container .con2 article > div > div > p {
+  padding-bottom: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -1px;
+}
+/*3단계 보안인증*/
+main .container .con2 article > div ul {
+  padding-top: 100px;
+  height: 640px;
+  position: relative;
+}
+main .container .con2 article > div ul em {
+  display: block;
+  padding-bottom: 36px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  color: #3886df;
+}
+main .container .con2 article > div ul span {
+  display: block;
+  padding-bottom: 43px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+main .container .con2 article > div ul.step li {
+  position: absolute;
+  left: 50%;
+  margin-left: -99px;
+  opacity: 0;
+  top: 100px;
+}
+main .container .con2 article > div ul.step li:nth-child(1) {
+  transition: opacity 1s ease-in, top 0.6s ease-in 0.2s;
+  margin-left: -421px;
+}
+main .container .con2 article > div ul.step li:nth-child(2) {
+  transition: opacity 1s ease-in 0.2s, top 0.6s ease-in 0.4s;
+}
+main .container .con2 article > div ul.step li:nth-child(3) {
+  transition: opacity 1s ease-in 0.4s, top 0.6s ease-in 0.6s;
+  margin-left: 222px;
+}
+main .container .con2 article > div ul.step li.on {
+  opacity: 1;
+  top: 0px;
+}
+main .container .con2 article > div > i {
+  display: block;
+  width: 1px;
+  height: 340px;
+  background-color: #35374c;
+  position: absolute;
+  margin-top: -640px;
+  left: 50%;
+  margin-left: -160px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in 1s;
+}
+main .container .con2 article > div > i.on {
+  opacity: 1;
+}
+main .container .con2 article > div > i:nth-of-type(2) {
+  margin-left: 160px;
+}
+main .container .con2 article > div > div:nth-of-type(2) {
+  width: 100%;
+  height: 1100px;
+  position: relative;
+}
+main .container .con2 article > div > .videoTit p {
+  position: absolute;
+  z-index: 99;
+}
+main .container .con2 article > div > div:nth-of-type(2) video {
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  width: 1600px;
+  margin-left: -800px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+main .container .con2 article > div > div:nth-of-type(2) video.on {
+  opacity: 1;
+}
+/*content3*/
+main .container .con3 > div {
+  width: 100%;
+  height: 520px;
+  background: #060922;
+}
+main .container .con3 article {
+  position: relative;
+}
+main .container .con3 article img {
+  position: absolute;
+  left: 50%;
+  top: 402px;
+  margin-left: -103px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.7s ease-in;
+}
+main .container .con3 article img.on {
+  opacity: 1;
+}
+main .container .con3 article i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 1px;
+  height: 200px;
+  background-color: #35374c;
+  opacity: 0;
+  transition: opacity 1.2s ease-in 0.5s;
+}
+main .container .con3 article i.line {
+  width: 400px;
+  height: 1px;
+  transform: translateY(-306px);
+}
+main .container .con3 article i.on {
+  opacity: 1;
+}
+main .container .con3 article > i:nth-of-type(1) {
+  transform: translateY(-363px);
+}
+main .container .con3 article > i:nth-of-type(2) {
+  transform: translateY(167px);
+}
+main .container .con3 article > i:nth-of-type(3) {
+  transform: translateX(-601px);
+}
+main .container .con3 article > i:nth-of-type(4) {
+  transform: translateX(200px);
+}
+main .container .con3 article ul {
+  height: 1040px;
+  background: #060922 url(../image/cryptobank/con3_bg.png) no-repeat center;
+  background-size: auto 100%;
+}
+main .container .con3 article ul.on {
+  opacity: 1;
+}
+main .container .con3 article ul li {
+  position: absolute;
+  width: 250px;
+  margin-left: -125px;
+  left: 50%;
+  top: 430px;
+  opacity: 0;
+  transition: opacity 1.2s ease-in 0.5s, top 1.2s ease-in,
+    margin-left 1.2s ease-in;
+}
+
+/*on*/
+main .container .con3 article ul li.on {
+  opacity: 1;
+}
+/*easy*/
+main .container .con3 article ul li:nth-child(1).on {
+  margin-left: -403px;
+  top: 237px;
+}
+/*service*/
+main .container .con3 article ul li:nth-child(2).on {
+  margin-left: 153px;
+  top: 237px;
+}
+/*platform*/
+main .container .con3 article ul li:nth-child(3).on {
+  margin-left: -403px;
+  top: 637px;
+}
+/*global*/
+main .container .con3 article ul li:nth-child(4).on {
+  margin-left: 153px;
+  top: 637px;
+}
+
+main .container .con3 article ul li h4 {
+  padding-bottom: 44px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 0.75;
+  letter-spacing: -1.2px;
+}
+main .container .con3 article ul li em {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: -0.9px;
+}
+/*content4*/
+main .container .con4 {
+  height: 1040px;
+  background: #060922 url(../image/cryptobank/con4_bg.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+main .container .con4 .bg_color {
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-color: #060922;
+}
+main .container .con4 article {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+main .container .con4 .bg_color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #060922;
+}
+main .container .con4 article h3 {
+  padding-top: 160px;
+  padding-bottom: 110px;
+  color: #fff;
+}
+main .container .con4 article video {
+  position: absolute;
+  left: 50%;
+  margin-left: -482px;
+  top: 400px;
+  width: 964px;
+  height: 541px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in, top 0.5s ease-in 0.3s;
+}
+main .container .con4 article video.on {
+  top: 240px;
+  opacity: 1;
+}
+/*스크린효과*/
+.screen {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  left: 0;
+  top: 1200px;
+}
+.screen img {
+  position: absolute;
+  mix-blend-mode: screen;
+  opacity: 1;
+}
+.screen img:nth-of-type(1),
+.screen img:nth-of-type(2) {
+  top: 1050px;
+  left: -72px;
+  transition: opacity 0.5s ease-in, top 1s;
+}
+.screen img:nth-of-type(3),
+.screen img:nth-of-type(4) {
+  top: 1711px;
+  right: -178px;
+}
+.screen img:nth-of-type(5),
+.screen img:nth-of-type(6) {
+  top: 4100px;
+  left: -81px;
+}
+.screen img:nth-of-type(7),
+.screen img:nth-of-type(8) {
+  top: 4400px;
+  right: 46px;
+}
+.screen img:nth-of-type(9),
+.screen img:nth-of-type(10) {
+  top: 5224px;
+  left: 109px;
+}
+.screen img:nth-child(even) {
+  animation: star 0.7s ease-in infinite alternate;
+}
+/*키프레임*/
+@keyframes slide1 {
+  from {
+    background-image: url(../image/cryptobank/con1_a1.png);
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+  to {
+    background-image: url(../image/cryptobank/con1_a1.png);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes slide2 {
+  from {
+    background-image: url(../image/cryptobank/con1_b1.png);
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+  to {
+    background-image: url(../image/cryptobank/con1_b1.png);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes slide3 {
+  from {
+    background-image: url(../image/cryptobank/con1_c1.png);
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+  to {
+    background-image: url(../image/cryptobank/con1_c1.png);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes bga {
+  0% {
+    background-image: url(../image/cryptobank/con1_a1.png);
+  }
+  40% {
+    background-image: url(../image/cryptobank/con1_a1.png);
+  }
+  41% {
+    background-image: url(../image/cryptobank/con1_a2.png);
+  }
+  100% {
+    background-image: url(../image/cryptobank/con1_a2.png);
+  }
+}
+@keyframes bgb {
+  0% {
+    background-image: url(../image/cryptobank/con1_b1.png);
+  }
+  40% {
+    background-image: url(../image/cryptobank/con1_b1.png);
+  }
+  41% {
+    background-image: url(../image/cryptobank/con1_b2.png);
+  }
+  100% {
+    background-image: url(../image/cryptobank/con1_b2.png);
+  }
+}
+@keyframes bgc {
+  0% {
+    background-image: url(../image/cryptobank/con1_c1.png);
+  }
+  29% {
+    background-image: url(../image/cryptobank/con1_c1.png);
+  }
+  30% {
+    background-image: url(../image/cryptobank/con1_c2.png);
+  }
+  64% {
+    background-image: url(../image/cryptobank/con1_c2.png);
+  }
+  65% {
+    background-image: url(../image/cryptobank/con1_c3.png);
+  }
+  100% {
+    background-image: url(../image/cryptobank/con1_c3.png);
+  }
+}
+@keyframes bgd {
+  0% {
+    background-image: url(../image/cryptobank/con1_d1.png);
+  }
+  5% {
+    background-image: url(../image/cryptobank/con1_d1.png);
+  }
+  24% {
+    background-image: url(../image/cryptobank/con1_d1.png);
+  }
+  25% {
+    background-image: url(../image/cryptobank/con1_d2.png);
+  }
+  49% {
+    background-image: url(../image/cryptobank/con1_d2.png);
+  }
+  50% {
+    background-image: url(../image/cryptobank/con1_d3.png);
+  }
+  74% {
+    background-image: url(../image/cryptobank/con1_d3.png);
+  }
+  75% {
+    background-image: url(../image/cryptobank/con1_d4.png);
+  }
+  100% {
+    background-image: url(../image/cryptobank/con1_d4.png);
+  }
+}
+
+@keyframes bge {
+  0% {
+    background-image: url(../image/cryptobank/con1_e1.png);
+  }
+  8% {
+    background-image: url(../image/cryptobank/con1_e1.png);
+  }
+  24% {
+    background-image: url(../image/cryptobank/con1_e1.png);
+  }
+  25% {
+    background-image: url(../image/cryptobank/con1_e2.png);
+  }
+  34% {
+    background-image: url(../image/cryptobank/con1_e2.png);
+  }
+  35% {
+    background-image: url(../image/cryptobank/con1_e3.png);
+  }
+  74% {
+    background-image: url(../image/cryptobank/con1_e3.png);
+  }
+  75% {
+    background-image: url(../image/cryptobank/con1_e4.png);
+  }
+  100% {
+    background-image: url(../image/cryptobank/con1_e4.png);
+  }
+}
+@keyframes gold {
+  0% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    top: 204px;
+  }
+  74% {
+    opacity: 1;
+    top: 440px;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 1194px) and (min-width: 1024px) {
+  main .container .con1 article > div img {
+    top: 150px;
+    margin-left: -360px;
+    width: 360px;
+  }
+  main .container .con1 article > div .gif {
+    margin-left: -360px;
+    width: 360px;
+    height: 720px;
+  }
+  /*content1*/
+  main .container .con1 {
+    background-size: 130% auto;
+  }
+  main .container .con1 article > div .con1_img,
+  main .container .con1 article > div .tab_wrap .tab_content {
+    top: -0px;
+    margin-left: -360px;
+    width: 360px;
+    height: 720px;
+  }
+  main .container .con1 article > div > div {
+    padding-left: 70px;
+  }
+  main .container .con1 article > div > div > h3 {
+    font-size: 42px;
+  }
+  main .container .con1 article > div > div > p {
+    font-size: 18px;
+  }
+
+  main .container .con2 .contents_bg {
+    width: 100%;
+    height: 380px;
+  }
+  /*3단계 보안인증*/
+  main .container .con2 article > div ul {
+    height: 500px;
+  }
+  main .container .con2 article > div > i {
+    margin-top: -510px;
+  }
+  main .container .con2 article > div > div:nth-of-type(2) {
+    width: 100%;
+    height: 800px;
+  }
+  main .container .con2 article > div > div:nth-of-type(2) video {
+    width: 1200px;
+    margin-left: -600px;
+  }
+  main .container .con3 > div {
+    width: 100%;
+    height: 380px;
+  }
+  main .container .con4 article p:nth-of-type(2) {
+    font-size: 44px;
+  }
+
+  /*스크린효과*/
+  .screen {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1200px;
+  }
+  .screen img {
+    position: absolute;
+    mix-blend-mode: screen;
+    opacity: 1;
+    transform: scale(0.7);
+  }
+  .screen img:nth-of-type(1),
+  .screen img:nth-of-type(2) {
+    top: 1150px;
+    left: -180px;
+  }
+  .screen img:nth-of-type(3),
+  .screen img:nth-of-type(4) {
+    top: 1811px;
+  }
+  .screen img:nth-of-type(5),
+  .screen img:nth-of-type(6) {
+    top: 4100px;
+    left: -130px;
+  }
+  .screen img:nth-of-type(7),
+  .screen img:nth-of-type(8) {
+    top: 4200px;
+    right: -50px;
+  }
+  .screen img:nth-of-type(9),
+  .screen img:nth-of-type(10) {
+    top: 5224px;
+    left: 0px;
+  }
+  .screen img:nth-child(even) {
+    animation: star 0.7s ease-in infinite alternate;
+  }
+}
+/*모바일*/
+@media (min-width: 0px) and (max-width: 1024px) {
+  main .main_visual {
+    height: 600px;
+    background: #060922 url("../image/cryptobank/mobile/main_bg.png") no-repeat
+      bottom;
+  }
+  main .main_visual h2 {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    top: 250px;
+    transition: opacity 1s ease-in-out 0.3s, top 1s ease-in-out;
+  }
+  main .main_visual h2.on {
+    top: 130px;
+  }
+
+  main .main_visual em {
+    top: 409px;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.75px;
+    transition: opacity 1s ease-in 0.5s, top 1s ease-in;
+  }
+  main .main_visual em.letter1 {
+    top: 400px;
+  }
+  main .main_visual em.letter2 {
+    top: 470px;
+  }
+  main .main_visual em.on {
+    opacity: 1;
+  }
+  main .main_visual em.letter1.on {
+    top: 215px;
+  }
+  main .main_visual em.letter2.on {
+    top: 240px;
+  }
+  main .main_visual > div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in 1s;
+  }
+  main .main_visual > div.on {
+    opacity: 1;
+  }
+  main .main_visual > div video {
+    width: 390px;
+    border-radius: 20px;
+  }
+  main .main_visual > div img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -230px;
+  }
+}

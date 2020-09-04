@@ -1,0 +1,90 @@
+#popup {
+  position: absolute;
+  width: 440px;
+  padding: 20px;
+  left: 50%;
+  margin-left: -220px;
+  top: 18%;
+  color: #000;
+  background-color: #fff;
+  z-index: 98;
+  text-align: center;
+  box-shadow: 0 3px 10px 2px rgba(255, 255, 255, 0.3);
+}
+#popup p > img {
+  padding-right: 10px;
+}
+#popup p > button {
+  display: block;
+  margin: 30px auto 0;
+  width: 80px;
+  line-height: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  transition: border 0.4s ease-in, background 0.4s ease-in, color 0.4s ease-in;
+  cursor: pointer;
+}
+#popup p > .m_popup {
+  display: none;
+}
+#popup p > button:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}
+@media (min-width: 1025px) and (max-width: 1194px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1024px) {
+#popup {
+    position: absolute;
+    width: 90vw;
+    padding: 10% 5%;
+    left: 5vw;
+    margin-left: 0;
+    top: 5vh;
+    color: #000;
+    background-color: #fff;
+    z-index: 98;
+    box-shadow: 0 3px 10px 2px rgba(255, 255, 255, 0.3);
+}
+#popup dd{
+  font-size: 12px;
+}
+#popup dt{
+  font-size: 14px;
+}
+#popup dd > i {
+  display: block;
+  word-break: break-word;
+  font-style: italic;
+}
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  #popup {
+    position: absolute;
+    width: 310px;
+    padding: 20px 0px;
+    left: 50%;
+    margin-left: -155px;
+    top: 10px;
+    color: #000;
+    background-color: #fff;
+    z-index: 999;
+    text-align: center;
+    box-shadow: 0 3px 10px 2px rgba(255, 255, 255, 0.3);
+  }
+  #popup p > .pc_popup {
+    display: none;
+  }
+  #popup p > .m_popup {
+    display: block;
+  }
+  #popup p > button {
+    width: 60px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+}

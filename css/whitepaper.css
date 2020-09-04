@@ -1,0 +1,37 @@
+.container {
+  padding-bottom: 694px;
+}
+.whitepaper_wrap {
+  background: url(../image/whitepaper/back1.png) center center no-repeat;
+  width: 1194px;
+  height: 451px;
+  text-align: center;
+  padding: 140px 0 120px 0;
+}
+.whitepaper_wrap p {
+  padding-bottom: 30px;
+  font-size: 19px;
+  letter-spacing: -0.95px;
+  line-height: 1.58;
+}
+h3 {
+  padding-bottom: 120px;
+}
+.down_btn {
+  background: url(../image/whitepaper/download_btn.png) center center no-repeat;
+  margin-bottom: 4px;
+  display: block;
+  width: 181px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+/* 미디어쿼리 */
+@media (min-width: 1024px) and (max-width: 1194px) {
+  main .container {
+    width: 1024px;
+  }
+  .whitepaper_wrap {
+    width: 1024px;
+  }
+}

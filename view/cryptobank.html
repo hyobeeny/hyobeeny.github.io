@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="Korea">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 페이지를 작성한 제작자명 -->
+    <meta name="Author" content="스웹트파운데이션" />
+    <!-- 검색엔진에 의해 검색되는 단어를 지정 -->
+    <meta name="Keywords" content="swept,스웹트파운데이션,스웹트" />
+    <title>SWEPT</title>
+    <!--파비콘-->
+    <!--안드로이드버전-->
+    <link rel="icon" href="../image/swept_fav.png" />
+    <!--아이폰 애플버전-->
+    <link rel="apple-touch-icon" href="../image/swept_fav.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cryptobank.css" />
+    <script src="../javascript/jquery-3.5.1.min.js"></script>
+    <script src="../javascript/partial.js"></script>
+    <script src="../javascript/common.js"></script>
+    <script src="../javascript/cryptobank.js"></script>
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="clearfix">
+        <h1>
+          <a class="logo" href="index.html"
+            ><img src="../image/SWEPT_logo(wh).png" alt="SWEPT_logo"
+          /></a>
+        </h1>
+        <div class="m_gnb_btn"></div>
+        <nav>
+          <ul class="clearfix">
+            <!-- <li>
+              <p class="mainMenu">
+                Introduction<img src="../image/submenu_close.png" alt="+" /><img
+                  src="../image/submenu_close.png"
+                  alt="-"
+                />
+              </p>
+              <ul class="submenu">
+                <li><a href="roadmap.html">Road Map</a></li>
+                <li><a href="#" onclick="preparing();">Advisor</a></li>
+                <li><a href="#" onclick="preparing();">Team</a></li>
+                <li><a href="whitepaper.html">White Paper</a></li>
+              </ul>
+            </li> -->
+            <li>
+              <p class="mainMenu">
+                Project<img src="../image/submenu_close.png" alt="+" /><img
+                  src="../image/submenu_close.png"
+                  alt="-"
+                />
+              </p>
+              <ul class="submenu">
+                <li><a href="cryptobank.html">Crypto Bank</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="mainMenu">
+                News<img src="../image/submenu_close.png" alt="+" /><img
+                  src="../image/submenu_close.png"
+                  alt="-"
+                />
+              </p>
+              <ul class="submenu">
+                <li><a href="notice.html">Notice</a></li>
+                <!-- <li><a href="pressrelease.html">Press Release</a></li> -->
+                <li><a href="video.html">Video</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="mainMenu">
+                Community<img src="../image/submenu_close.png" alt="+" /><img
+                  src="../image/submenu_close.png"
+                  alt="-"
+                />
+              </p>
+              <ul class="submenu">
+                <li>
+                  <a href="https://blog.naver.com/doobit20" target="_blank"
+                    >Blog</a
+                  >
+                </li>
+                <!--
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>-->
+                <li>
+                  <a
+                    href="https://t.me/joinchat/HWGDKhO7pmZZUzf49JV9OQ"
+                    target="_blank"
+                    >Telegram</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" onclick="preparing();" class="mainMenu"
+                >Smart Contract</a
+              >
+              <ul class="submenu">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" onclick="preparing();" class="mainMenu">Contact Us</a>
+              <ul class="submenu">
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="lang">
+          <li>
+            KOR
+            <ul>
+              <li onclick="preparing();">ENG</li>
+              <li onclick="preparing();">KOR</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="main_visual">
+        <h2>크립토뱅크</h2>
+        <em class="letter1">
+          국내외 자금세탁방지법과 트래블룰 걱정없이
+        </em>
+        <em class="letter2">
+          안전하고 간편하게 이용할 수 있는 가상자산 통합관리, 송금결제 플랫폼
+        </em>
+        <div>
+          <video muted autoplay playsinline>
+            <source
+              src="../image/cryptobank/main_splash.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <img src="../image/cryptobank/main_phone.png" alt="메인_목업" />
+        </div>
+      </div>
+      <div class="container">
+        <section class="con1">
+          <ul class="star_bg">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="contents_bg">
+            <h2>편의성</h2>
+            <span
+              >가상자산 관리, 온 · 오프라인 결제까지<br />기존에 없던 간편한
+              방식으로</span
+            >
+          </div>
+          <article>
+            <div>
+              <div class="bg_color">
+                <h3>자산관리</h3>
+
+                <ul class="tab">
+                  <li class="on" data-tab="tab1">
+                    보유자산조회
+                    <p>
+                      각 거래소 별 흩어져 있는 나의 가상자산,<br />
+                      이젠 한번에 조회하고 관리하세요.
+                    </p>
+                  </li>
+                  <li data-tab="tab2">
+                    시세조회
+                    <p>
+                      내가 보유하고 있는 가상 자산들의 시세를 실시간으로
+                      조회하세요.
+                    </p>
+                  </li>
+                  <li data-tab="tab3">
+                    자산이체
+                    <p>
+                      한번의 친구등록으로 나의 가상자산을 쉽고 안전하게
+                      송금하세요.
+                    </p>
+                  </li>
+                  <!--
+                  https://webruden.tistory.com/98
+                --></ul>
+              </div>
+              <!--              <img class="gif" src="../image/cryptobank/con1_a.gif" alt="" />-->
+              <span class="gif"></span>
+              <img
+                class="phone"
+                src="../image/cryptobank/phone.png"
+                alt="컨텐츠_목업"
+              />
+              <ul class="tab_wrap">
+                <li id="tab1" class="tab_content"></li>
+                <li id="tab2" class="tab_content"></li>
+                <li id="tab3" class="tab_content"></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <h3>간편송금</h3>
+                <p>
+                  복잡한 가상자산 지갑 주소 대신, 친구 등록만으로 원하는
+                  거래소에<br />
+                  손쉽게 송금하세요.
+                </p>
+              </div>
+
+              <img
+                class="phone"
+                src="../image/cryptobank/phone.png"
+                alt="컨텐츠_목업"
+              />
+              <p class="con1_img con1_d"></p>
+            </div>
+            <div>
+              <div>
+                <h3>통합형 QR 결제</h3>
+                <p>
+                  신용카드나 기존의 CPM 방식처럼 누군가와 접촉할 필요 없이<br />
+                  통합형 QR로 다양한 가맹점에서 자유롭게 결제하세요.
+                </p>
+              </div>
+              <img
+                class="phone"
+                src="../image/cryptobank/phone.png"
+                alt="컨텐츠_목업"
+              />
+              <p class="con1_img con1_e"></p>
+            </div>
+          </article>
+        </section>
+        <section class="con2">
+          <ul class="star_bg">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="contents_bg">
+            <h2>보안성</h2>
+            <span
+              >크립토뱅크만의 2중 암호화 보안시스템으로<br />어디서든
+              안전하게</span
+            >
+          </div>
+          <article>
+            <div>
+              <div>
+                <h3>3단계 보안인증</h3>
+                <p>철저한 3단계 보안인증으로 안심하고 사용하세요.</p>
+              </div>
+              <ul class="step">
+                <li>
+                  <em>1단계</em><span>이메일 본인확인</span>
+                  <img
+                    src="../image/cryptobank/con2_1.png"
+                    alt="이메일 본인확인"
+                  />
+                </li>
+                <li>
+                  <em>2단계</em><span>간편 비밀번호</span>
+                  <img
+                    src="../image/cryptobank/con2_2.png"
+                    alt="간편 비밀번호"
+                  />
+                </li>
+                <li>
+                  <em>3단계</em><span>생체 인증정보</span>
+                  <img
+                    src="../image/cryptobank/con2_3.png"
+                    alt="생체 인증정보"
+                  />
+                </li>
+              </ul>
+              <i></i>
+              <i></i>
+            </div>
+            <!-- <div class="videoTit">
+              <div>
+                <h3>2중 암호화 보안시스템</h3>
+                <p>
+                  암호화된 사용자의 Key를 자물쇠와 열쇠로 분할하여 보관하는<br />
+                  2중 암호화 보안시스템으로 자산과 정보를 철저하게 보호합니다.
+                </p>
+              </div>
+              <div>
+                <video muted autoplay loop playsinline>
+                  <source
+                    src="../image/cryptobank/con3_video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div> -->
+          </article>
+        </section>
+        <section class="content con3">
+          <div>
+            <h2>확장성</h2>
+            <span
+              >다양한 결제 · 송금 시스템에 적용하여<br />자유롭고 편리하게
+              사용하는 크립토뱅크</span
+            >
+          </div>
+          <article>
+            <img
+              src="../image/cryptobank/cryptobank_logo.png"
+              alt="크립토뱅크로고"
+            />
+
+            <i></i>
+            <i></i>
+            <i class="line"></i>
+            <i class="line"></i>
+            <ul>
+              <li>
+                <h4>Easy</h4>
+                <em>
+                  기존의 결제 수단에<br />소프트웨어 업데이트만으로<br />편리하게
+                  사용 가능
+                </em>
+              </li>
+              <li>
+                <h4>Service</h4>
+                <em>
+                  결제·송금 서비스는 물론<br />온오프라인 다양한 가맹점의<br />서비스에
+                  적용 가능
+                </em>
+              </li>
+              <li>
+                <h4>Platform</h4>
+                <em>
+                  기존 업체들과 유저쟁탈전 없이<br />서비스가 가능한 포괄적
+                  통합플랫폼
+                </em>
+              </li>
+              <li>
+                <h4>Global</h4>
+                <em> 해외 업체와 이용자도<br />흡수할 수 있는 글로벌서비스 </em>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="content con4">
+          <div class="bg_color"></div>
+          <article>
+            <!-- <h3>크립토뱅크 튜토리얼</h3> -->
+            <video controls playsinline>
+              <source
+                src="../image/cryptobank/cryptobank.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </article>
+        </section>
+      </div>
+      <div class="screen">
+        <img src="../image/cryptobank/blockchain1.png" />
+        <img src="../image/cryptobank/blockchain1_1.png" />
+        <img src="../image/cryptobank/blockchain2.png" />
+        <img src="../image/cryptobank/blockchain2_1.png" />
+        <img src="../image/cryptobank/blockchain2.png" />
+        <img src="../image/cryptobank/blockchain2_1.png" />
+        <img src="../image/cryptobank/blockchain3.png" />
+        <img src="../image/cryptobank/blockchain3_1.png" />
+        <img src="../image/cryptobank/blockchain4.png" />
+        <img src="../image/cryptobank/blockchain4_1.png" />
+      </div>
+    </main>
+    <footer>
+      <div id="footer" class="clearfix"></div>
+    </footer>
+    <a href="#" class="top_btn"> </a>
+  </body>
+</html>

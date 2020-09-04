@@ -1,0 +1,266 @@
+/* 한글폰트 NotoSansCJKKr   한글은 노토산스 폰트를 사용해서 작업. 자간은 보통 -50을 사용합니다. */
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../font/NotoSansCJKkr-Thin.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/NotoSansCJKkr-Regular.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/NotoSansCJKkr-Medium.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/NotoSansCJKkr-Light.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/NotoSansCJKkr-DemiLight.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/NotoSansCJKkr-Bold.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/NotoSansCJKkr-Black.woff") format("woff");
+  unicode-range: U+AC00- U+D7A3;
+}
+main .container h3 > p {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  margin-top: 60px;
+}
+main .container {
+  width: 100%;
+}
+main .container article > div {
+  width: 100%;
+}
+main .container article > div > div {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  font-weight: 500;
+  color: #cacaca;
+  border-bottom: 2px solid #e1e1e1;
+  position: relative;
+}
+main .container article > div:first-child div {
+  border-top: 2px solid transparent;
+}
+main .container article > div:last-child {
+  width: 100%;
+  height: 100px;
+}
+main .container article > div > div > span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  top: -2px;
+}
+main .container article > div > div > p {
+  width: 408px;
+  padding-top: 150px;
+  font-weight: 500;
+  font-size: 66px;
+  padding-left: 72px;
+  border-top: 4px solid transparent;
+}
+
+/* roadmap border의 color addclass .on */
+main .container article > div.on {
+  background-color: #f8f8f8;
+}
+main .container article > div > div.on {
+  border-color: #000;
+  color: #000;
+}
+main .container article > div > div > span.on {
+  background-color: #000;
+}
+main .container article > div > div > p.on {
+  border-color: #000;
+}
+
+main .container article > div > div > ul {
+  width: 592px;
+  padding: 150px 0 150px 98px;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+main .container article > div:last-child {
+  margin-bottom: 365px;
+}
+main .container article > div > div > ul li {
+  padding-bottom: 5px;
+  line-height: 2.5;
+}
+
+/* 로드맵 텍스트 앞에 가상선택자 추가 */
+main .container article > div > div > ul li:before {
+  content: "·";
+  display: inline-block;
+  font-weight: 900;
+}
+
+main .container article > div > div > ul li:last-child {
+  padding-bottom: 0px;
+}
+main .container article > div > div > ul li .space {
+  display: inline-block;
+  width: 10px;
+}
+@media all and (min-width: 1000px) and (max-width: 1920px) {
+  main .container article > div > div > p {
+    width: 408px;
+    padding-top: 135px;
+  }
+  main .container article > div > div > ul {
+    width: 592px;
+    padding: 135px 0 135px 102px;
+    font-size: 20px;
+  }
+  main .container article > div:last-child {
+    margin-bottom: 190px;
+  }
+  main .container article > div > div > ul li .tbr {
+    display: block;
+  }
+  main .container article > div > div > ul li .tspace {
+    display: inline-block;
+    width: 6px;
+  }
+}
+@media (max-width: 1194px) and (min-width: 1024px) {
+  main .container article div > div {
+    width: 906px;
+  }
+  main .container article div > div > p {
+    width: 366px;
+    font-size: 56px;
+  }
+  main .container article div > div > ul {
+    width: 540px;
+    padding: 150px 0 150px 102px;
+    font-size: 18px;
+  }
+  main .container article > div > div > ul li .tbr {
+    display: block;
+  }
+  main .container article > div > div > ul li .tspace {
+    display: inline-block;
+    width: 6px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  main .container h3 > p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.7px;
+  }
+  main .container h3 > p > i {
+    display: block;
+  }
+
+  main .container article > div > div {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-weight: 400;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+  }
+  main .container article > div:first-child div {
+    border-top: 1px solid transparent;
+  }
+  main .container article > div:last-child {
+    width: 100%;
+    height: 100px;
+  }
+  main .container article > div > div > span {
+    display: block;
+    width: 200px;
+    height: 4px;
+    top: 0px;
+    left: 50%;
+    margin-left: -100px;
+  }
+  main .container article > div > div > span.on {
+    background-color: #13131f;
+  }
+  main .container article > div > div > p {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    padding-left: 60px;
+    border-top: 1px solid transparent;
+  }
+
+  main .container article > div > div > ul {
+    width: 100%;
+    padding: 0 0 60px 60px;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+  }
+  main .container article > div:last-child {
+    margin-bottom: 160px;
+  }
+  main .container article > div > div > ul li {
+    width: 260px;
+    padding-bottom: 0px;
+    line-height: 2.5;
+  }
+
+  /* 로드맵 텍스트 앞에 가상선택자 추가 */
+
+  main .container article > div > div > ul li:last-child {
+    padding-bottom: 0px;
+  }
+  main .container article > div > div > ul li .space {
+    display: inline-block;
+    width: 5px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  main .container article > div > div > span {
+    margin-left: -23%;
+  }
+  main .container article > div > div > p,
+  main .container article > div > div > ul {
+    padding-left: 28%;
+  }
+  main .container article > div > div > ul li {
+    width: auto;
+  }
+  main .container article > div > div > ul li .space {
+    display: inline-block;
+    width: 10px;
+  }
+}
